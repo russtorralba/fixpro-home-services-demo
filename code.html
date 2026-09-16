@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container":"#e6eeff","on-background":"#0d1c2f","on-secondary-fixed":"#00174b","surface-dim":"#ccdbf4","surface-tint":"#49607c","secondary-fixed":"#dbe1ff","on-primary-fixed":"#011d35","inverse-on-surface":"#ebf1ff","primary-container":"#0f2942","surface":"#f8f9ff","on-primary-fixed-variant":"#314863","on-primary-container":"#7991af","outline":"#74777e","secondary-container":"#316bf3","on-tertiary-fixed-variant":"#653e00","inverse-surface":"#233144","on-primary":"#ffffff","on-error-container":"#93000a","surface-container-high":"#dde9ff","background":"#f8f9ff","tertiary-fixed-dim":"#ffb95f","on-surface":"#0d1c2f","on-tertiary":"#ffffff","surface-bright":"#f8f9ff","primary":"#001428","inverse-primary":"#b0c9e8","outline-variant":"#c3c6ce","error":"#ba1a1a","surface-container-highest":"#d5e3fd","surface-container-lowest":"#ffffff","tertiary-fixed":"#ffddb8","on-secondary-container":"#fefcff","tertiary-container":"#3b2200","secondary-fixed-dim":"#b4c5ff","primary-fixed-dim":"#b0c9e8","on-secondary-fixed-variant":"#003ea8","primary-fixed":"#d1e4ff","surface-variant":"#d5e3fd","surface-container-low":"#eff4ff","error-container":"#ffdad6","on-error":"#ffffff","on-secondary":"#ffffff","on-tertiary-container":"#c77f00","secondary":"#0051d5","on-surface-variant":"#43474d","on-tertiary-fixed":"#2a1700","tertiary":"#1f1000"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter-mobile":"1rem","margin-mobile":"1rem","space-lg":"1.5rem","space-sm":"0.5rem","gutter":"1.5rem","space-md":"1rem","space-xl":"2.5rem","margin":"2rem","space-xs":"0.25rem"},"fontFamily":{"body-md":["Inter"],"body-lg":["Inter"],"headline-sm":["Plus Jakarta Sans"],"label-sm":["Inter"],"label-lg":["Inter"],"display-hero":["Plus Jakarta Sans"],"display-hero-mobile":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"body-sm":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"caption":["Inter"]},"fontSize":{"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"label-sm":["12px",{"lineHeight":"16px","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"600"}],"display-hero":["48px",{"lineHeight":"56px","fontWeight":"700"}],"display-hero-mobile":["32px",{"lineHeight":"40px","fontWeight":"700"}],"headline-lg":["36px",{"lineHeight":"44px","fontWeight":"700"}],"body-sm":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-lg-mobile":["26px",{"lineHeight":"34px","fontWeight":"700"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"600"}],"caption":["11px",{"lineHeight":"14px","fontWeight":"500"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/95 backdrop-blur-md border-b border-surface-container-high/60 shadow-[0_1px_6px_rgba(0,20,40,0.03)]"><div class="max-w-[1280px] mx-auto h-20 px-margin-mobile lg:px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-sm shrink-0"><a class="flex items-center" data-path="home" href="#"><img alt="FixPro Home Services" class="h-10 w-auto object-contain" src="public/fixpro-logo.png"/></a></div><nav class="hidden lg:flex items-center gap-1 xl:gap-2"><a class="px-3.5 py-2 font-label-lg text-label-lg text-on-surface-variant hover:text-secondary hover:bg-surface-container/50 rounded-lg transition-colors" data-path="services" href="#">Services</a><a class="px-3.5 py-2 font-label-lg text-label-lg text-on-surface-variant hover:text-secondary hover:bg-surface-container/50 rounded-lg transition-colors" data-path="how-it-works" href="#">How It Works</a><a class="px-3.5 py-2 font-label-lg text-label-lg text-on-surface-variant hover:text-secondary hover:bg-surface-container/50 rounded-lg transition-colors" data-path="service-areas" href="#">Service Areas</a><a class="px-3.5 py-2 font-label-lg text-label-lg text-on-surface-variant hover:text-secondary hover:bg-surface-container/50 rounded-lg transition-colors" data-path="reviews" href="#">Reviews</a><a class="px-3.5 py-2 font-label-lg text-label-lg text-on-surface-variant hover:text-secondary hover:bg-surface-container/50 rounded-lg transition-colors" data-path="faqs" href="#">FAQs</a></nav><div class="flex items-center gap-space-md shrink-0"><a class="hidden sm:flex items-center gap-1.5 font-label-lg text-label-lg text-primary hover:text-secondary transition-colors py-2" href="tel:8005553497"><span class="material-symbols-outlined text-[20px] text-secondary">call</span><span class="font-bold tracking-tight">(800) 555-3497</span></a><a class="inline-flex items-center justify-center gap-space-xs h-11 px-5 bg-secondary text-on-secondary rounded-lg font-label-lg text-label-lg shadow-sm hover:bg-secondary-container transition-all active:scale-[0.98]" data-path="book-a-technician" href="#"><span class="material-symbols-outlined text-[18px]">calendar_month</span><span>Book a Technician</span></a></div></div></header><main class="w-full pt-20 bg-background flex-1"><div class="flex flex-col w-full">
+<!-- HERO SECTION -->
+<section class="relative overflow-hidden bg-gradient-to-b from-surface-container-low via-background to-surface pt-space-xl pb-space-xl lg:pt-20 lg:pb-24">
+<div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+<!-- Left Col: Copy & Booking Bar -->
+<div class="lg:col-span-7 flex flex-col gap-space-md z-10">
+<!-- Subtle Neutral Trust Pill -->
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high/90 text-on-surface self-start text-xs font-semibold">
+<span class="material-symbols-outlined text-secondary text-[16px]">verified</span>
+<span>Residential Appliance Care &amp; Diagnostics</span>
+<span class="text-outline-variant">•</span>
+<span class="text-on-surface-variant font-medium">Clear Upfront Estimates</span>
+</div>
+<!-- Hero Headings -->
+<div class="flex flex-col gap-space-xs">
+<h1 class="font-display-hero text-display-hero text-primary tracking-tight leading-tight">
+              Fast, Reliable Home Appliance Repair
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+              Diagnostics and flat-rate pricing for refrigerators, washers, dryers, ovens, and HVAC units. Certified technicians delivering dependable repairs.
+            </p>
+</div>
+<!-- Primary / Secondary CTAs -->
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+<a class="inline-flex items-center justify-center gap-space-xs h-12 px-space-lg bg-secondary text-on-secondary rounded-lg font-label-lg text-label-lg font-bold shadow-sm hover:bg-secondary-container transition-all active:scale-[0.98]" data-path="book-a-technician" href="#">
+<span class="material-symbols-outlined text-[20px]">calendar_today</span>
+<span>Book a Technician</span>
+</a>
+<a class="inline-flex items-center justify-center gap-space-xs h-12 px-space-lg bg-surface-container text-primary rounded-lg font-label-lg text-label-lg font-bold shadow-sm hover:bg-surface-container-high transition-all active:scale-[0.98]" href="tel:8005553497">
+<span class="material-symbols-outlined text-[20px] text-secondary">call</span>
+<span>(800) 555-FIX-PRO</span>
+</a>
+</div>
+<!-- Interactive ZIP & Appliance Quick Booking Bar -->
+<div class="mt-space-sm p-space-md rounded-xl bg-surface-container-lowest border border-surface-container shadow-md">
+<div class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold mb-space-xs flex items-center justify-between">
+<span>Schedule Service &amp; Check Availability</span>
+<span class="text-secondary flex items-center gap-1 font-semibold text-[12px]">
+<span class="material-symbols-outlined text-[15px]">schedule</span> Flexible Arrival Windows
+              </span>
+</div>
+<form class="grid grid-cols-1 sm:grid-cols-12 gap-space-xs" onsubmit="event.preventDefault(); document.getElementById('hero-booking-feedback').classList.remove('hidden');">
+<div class="sm:col-span-5 relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">build</span>
+<select class="w-full h-11 pl-9 pr-8 bg-surface-container-low text-on-surface rounded-lg font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-secondary appearance-none cursor-pointer">
+<option disabled="" selected="" value="">Select Appliance Issue...</option>
+<option value="fridge">Refrigerator / Freezer</option>
+<option value="washer">Washer &amp; Dryer</option>
+<option value="dishwasher">Dishwasher</option>
+<option value="oven">Oven, Range &amp; Cooktop</option>
+<option value="hvac">Air Conditioner &amp; HVAC</option>
+<option value="inspection">Comprehensive Diagnostic Check</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-[18px]">expand_more</span>
+</div>
+<div class="sm:col-span-4 relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">location_on</span>
+<input class="w-full h-11 pl-9 pr-3 bg-surface-container-low text-on-surface rounded-lg font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-secondary placeholder:text-outline" maxlength="5" placeholder="Enter ZIP code" required="" type="text"/>
+</div>
+<div class="sm:col-span-3">
+<button class="w-full h-11 bg-primary text-on-primary rounded-lg font-label-lg text-label-lg font-bold shadow-sm hover:bg-primary-container transition-all flex items-center justify-center gap-1" type="submit">
+<span>Check Times</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</form>
+<div class="hidden mt-space-xs p-2.5 rounded-lg bg-surface-container-high text-on-surface font-label-sm text-label-sm flex items-center justify-between" id="hero-booking-feedback">
+<div class="flex items-center gap-1.5 text-on-background">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>Certified technicians serve this area. Choose your preferred time.</span>
+</div>
+<a class="text-secondary underline font-bold" data-path="book-a-technician" href="#">Pick Time Slot</a>
+</div>
+<!-- Clean Assurance Points -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-space-sm mt-space-xs text-on-surface-variant font-caption text-caption border-t border-surface-container/60">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[16px]">verified</span>
+<span>Licensed Technicians</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[16px]">payments</span>
+<span>Upfront Estimates</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[16px]">shield</span>
+<span>Workmanship Warranty</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[16px]">inventory_2</span>
+<span>OEM Parts Stocked</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Col: Clean Visual without cluttered badges -->
+<div class="lg:col-span-5 relative mt-6 lg:mt-0">
+<div class="relative rounded-2xl overflow-hidden shadow-xl bg-surface-container-highest border border-surface-container-high/40">
+<img alt="FixPro certified appliance repair technician smiling in modern residential kitchen next to luxury refrigerator holding diagnostic tablet and tool bag" class="w-full h-[480px] lg:h-[510px] object-cover object-center" src="public/fixpro-hero.png"/>
+<div class="absolute bottom-4 left-4 right-4 p-3 rounded-xl bg-primary/90 text-on-primary backdrop-blur-md shadow-md flex items-center justify-between">
+<div class="flex items-center gap-2 text-xs font-medium">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[18px]">verified_user</span>
+<span>Certified Appliance Care &amp; Diagnostics</span>
+</div>
+<span class="text-caption text-primary-fixed-dim hidden sm:inline">Residential Specialist</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- BRAND TRUST STRIP -->
+<section class="py-6 bg-surface-container-lowest border-y border-surface-container-high/50">
+<div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin">
+<div class="flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="shrink-0 flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[20px]">build_circle</span>
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-on-surface-variant">Service for Major Brands:</span>
+</div>
+<div class="flex flex-wrap items-center justify-center md:justify-end gap-x-6 gap-y-2 font-label-lg text-on-surface-variant/90 font-semibold tracking-tight">
+<span class="hover:text-primary transition-colors">Whirlpool</span>
+<span class="text-outline-variant">•</span>
+<span class="hover:text-primary transition-colors">Samsung</span>
+<span class="text-outline-variant">•</span>
+<span class="hover:text-primary transition-colors">LG</span>
+<span class="text-outline-variant">•</span>
+<span class="hover:text-primary transition-colors">GE Appliances</span>
+<span class="text-outline-variant">•</span>
+<span class="hover:text-primary transition-colors">Bosch</span>
+<span class="text-outline-variant">•</span>
+<span class="hover:text-primary transition-colors">Sub-Zero</span>
+<span class="text-outline-variant">•</span>
+<span class="hover:text-primary transition-colors">KitchenAid</span>
+<span class="text-outline-variant">•</span>
+<span class="hover:text-primary transition-colors">Maytag</span>
+</div>
+</div>
+</div>
+</section>
+<!-- CORE SERVICES GRID -->
+<section class="py-space-xl bg-surface-container-low" id="services">
+<div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-space-sm">
+<div>
+<span class="font-caption text-caption font-bold text-secondary tracking-widest uppercase mb-1 block">Full-Scope Repairs</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Appliance Repair Services We Master</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 max-w-2xl">Expert diagnosis and repair with original manufacturer parts. Clean, fast, and fully warrantied.</p>
+</div>
+<a class="inline-flex items-center gap-1 font-label-lg text-label-lg text-secondary font-bold hover:underline" data-path="services" href="#">
+<span>View All Repairs</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Service 1: Refrigerator -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md border border-surface-container-high/60 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-[26px]">kitchen</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-[11px] font-semibold">Prompt Diagnosis</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">Refrigerator &amp; Freezer Repair</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Compressor issues, sealed systems, water leaks, defrost failures, and malfunctioning ice makers.</p>
+<div class="flex flex-wrap gap-1.5 mb-space-md">
+<span class="px-2 py-1 rounded bg-surface-container-low font-caption text-caption text-on-surface font-medium">Temperature swings</span>
+<span class="px-2 py-1 rounded bg-surface-container-low font-caption text-caption text-on-surface font-medium">Door seals</span>
+<span class="px-2 py-1 rounded bg-surface-container-low font-caption text-caption text-on-surface font-medium">Water leaks</span>
+</div>
+</div>
+<a class="pt-space-sm mt-auto flex items-center justify-between text-secondary font-label-lg text-label-lg font-bold group-hover:text-primary transition-colors" data-path="book-a-technician" href="#">
+<span>Book Refrigerator Repair</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<!-- Service 2: Washer & Dryer -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md border border-surface-container-high/60 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-[26px]">local_laundry_service</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-[11px] font-semibold">OEM Replacement Parts</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">Washer &amp; Dryer Repair</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Spin cycle stalls, drum squeaking, heating element outages, drainage pump blocks, and digital sensor errors.</p>
+<div class="flex flex-wrap gap-1.5 mb-space-md">
+<span class="px-2 py-1 rounded bg-surface-container-low font-caption text-caption text-on-surface font-medium">No spin / drain</span>
+<span class="px-2 py-1 rounded bg-surface-container-low font-caption text-caption text-on-surface font-medium">Heating element</span>
+<span class="px-2 py-1 rounded bg-surface-container-low font-caption text-caption text-on-surface font-medium">Vibration check</span>
+</div>
+</div>
+<a class="pt-space-sm mt-auto flex items-center justify-between text-secondary font-label-lg text-label-lg font-bold group-hover:text-primary transition-colors" data-path="book-a-technician" href="#">
+<span>Book Laundry Repair</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<!-- Service 3: Dishwasher -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md border border-surface-container-high/60 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-[26px]">countertops</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-[11px] font-semibold">Clean &amp; Precise</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">Dishwasher Repair</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Standing water removal, spray arm replacement, door latch switches, cloudy film issues, and cycle faults.</p>
+<div class="flex flex-wrap gap-1.5 mb-space-md">
+<span class="px-2 py-1 rounded bg-surface-container-low font-caption text-caption text-on-surface font-medium">Drainage blocks</span>
+<span class="px-2 py-1 rounded bg-surface-container-low font-caption text-caption text-on-surface font-medium">Spray pump repair</span>
+<span class="px-2 py-1 rounded bg-surface-container-low font-caption text-caption text-on-surface font-medium">Control board fix</span>
+</div>
+</div>
+<a class="pt-space-sm mt-auto flex items-center justify-between text-secondary font-label-lg text-label-lg font-bold group-hover:text-primary transition-colors" data-path="book-a-technician" href="#">
+<span>Book Dishwasher Repair</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<!-- Service 4: Oven & Range -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md border border-surface-container-high/60 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-[26px]">microwave</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-[11px] font-semibold">Gas &amp; Electric</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">Oven, Stove &amp; Range Repair</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Igniter malfunctions, burner coil burned out, uneven baking temperature calibration, and cooktop sensors.</p>
+<div class="flex flex-wrap gap-1.5 mb-space-md">
+<span class="px-2 py-1 rounded bg-surface-container-low font-caption text-caption text-on-surface font-medium">Igniter repairs</span>
+<span class="px-2 py-1 rounded bg-surface-container-low font-caption text-caption text-on-surface font-medium">Bake element</span>
+<span class="px-2 py-1 rounded bg-surface-container-low font-caption text-caption text-on-surface font-medium">Thermostat calibration</span>
+</div>
+</div>
+<a class="pt-space-sm mt-auto flex items-center justify-between text-secondary font-label-lg text-label-lg font-bold group-hover:text-primary transition-colors" data-path="book-a-technician" href="#">
+<span>Book Cooking Repair</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<!-- Service 5: AC & HVAC -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md border border-surface-container-high/60 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-[26px]">mode_fan</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-[11px] font-semibold">Seasonal Service</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">Air Conditioner &amp; HVAC Repair</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Refrigerant leaks, condenser coils, blower motor replacement, capacitor testing, and thermostat synchronization.</p>
+<div class="flex flex-wrap gap-1.5 mb-space-md">
+<span class="px-2 py-1 rounded bg-surface-container-low font-caption text-caption text-on-surface font-medium">Refrigerant recharge</span>
+<span class="px-2 py-1 rounded bg-surface-container-low font-caption text-caption text-on-surface font-medium">Blower fan repair</span>
+<span class="px-2 py-1 rounded bg-surface-container-low font-caption text-caption text-on-surface font-medium">Airflow inspection</span>
+</div>
+</div>
+<a class="pt-space-sm mt-auto flex items-center justify-between text-secondary font-label-lg text-label-lg font-bold group-hover:text-primary transition-colors" data-path="book-a-technician" href="#">
+<span>Book AC Repair</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<!-- Service 6: Comprehensive Diagnostics -->
+<div class="rounded-xl bg-surface-container-highest p-space-md border border-surface-container-high/80 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="w-12 h-12 rounded-xl bg-primary text-on-primary flex items-center justify-center group-hover:bg-secondary transition-colors">
+<span class="material-symbols-outlined text-[26px]">troubleshoot</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-lowest text-secondary font-label-sm text-[11px] font-bold">Diagnostic Credit</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">All-Appliance Diagnostic Check</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Not sure what went wrong? Our technicians complete a systematic mechanical and electrical test, with the fee applied toward your approved repair.</p>
+<div class="flex flex-wrap gap-1.5 mb-space-md">
+<span class="px-2 py-1 rounded bg-surface-container-lowest font-caption text-caption text-on-surface font-medium">Multi-point testing</span>
+<span class="px-2 py-1 rounded bg-surface-container-lowest font-caption text-caption text-on-surface font-medium">Electrical safety</span>
+<span class="px-2 py-1 rounded bg-surface-container-lowest font-caption text-caption text-on-surface font-medium">Upfront quote</span>
+</div>
+</div>
+<a class="pt-space-sm mt-auto flex items-center justify-between text-primary font-label-lg text-label-lg font-bold group-hover:text-secondary transition-colors" data-path="book-a-technician" href="#">
+<span>Schedule Diagnostics</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- WHY CHOOSE FIXPRO SECTION + QUALITY COMMITMENTS -->
+<section class="py-space-xl bg-background" id="why-us">
+<div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin">
+<div class="text-center max-w-3xl mx-auto mb-space-xl">
+<span class="font-caption text-caption font-bold text-secondary tracking-widest uppercase mb-1 block">The FixPro Standard</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">The Modern Standard In Appliance Service</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Designed around eliminating common home service headaches: ambiguous arrival windows, unexpected costs, and repeat breakdowns.</p>
+</div>
+<!-- 4 High Impact Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter mb-space-xl">
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest border border-surface-container-high/60 shadow-sm flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[26px]">request_quote</span>
+</div>
+<h3 class="font-headline-sm text-[18px] text-primary font-bold">Upfront, Transparent Pricing</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Clear flat-rate quotes explained before work begins so you make an informed decision without surprise charges.</p>
+</div>
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest border border-surface-container-high/60 shadow-sm flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[26px]">badge</span>
+</div>
+<h3 class="font-headline-sm text-[18px] text-primary font-bold">Qualified Technicians</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Trained, vetted professionals experienced with leading appliance configurations and manufacturer specifications.</p>
+</div>
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest border border-surface-container-high/60 shadow-sm flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[26px]">verified_user</span>
+</div>
+<h3 class="font-headline-sm text-[18px] text-primary font-bold">Workmanship Warranty</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">We stand behind every repair. Installed replacement parts and labor are backed by our dedicated warranty guarantee.</p>
+</div>
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest border border-surface-container-high/60 shadow-sm flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[26px]">rv_hookup</span>
+</div>
+<h3 class="font-headline-sm text-[18px] text-primary font-bold">Stocked Service Vans</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Technicians carry common factory OEM parts and testing tools to resolve issues efficiently in a single visit.</p>
+</div>
+</div>
+<!-- Neutral Portfolio-Appropriate Quality Pillars Bar -->
+<div class="rounded-2xl bg-primary text-on-primary p-space-lg shadow-xl">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter text-center divide-y sm:divide-y-0 sm:divide-x divide-on-primary/10">
+<div class="flex flex-col items-center justify-center p-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest/10 flex items-center justify-center text-tertiary-fixed-dim mb-2">
+<span class="material-symbols-outlined text-[22px]">receipt_long</span>
+</div>
+<div class="font-label-lg text-label-lg font-bold text-on-primary">Clear Diagnostic Quotes</div>
+<div class="font-caption text-caption text-on-primary-container mt-1">Confirmed before repairs begin</div>
+</div>
+<div class="flex flex-col items-center justify-center p-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest/10 flex items-center justify-center text-secondary-fixed mb-2">
+<span class="material-symbols-outlined text-[22px]">category</span>
+</div>
+<div class="font-label-lg text-label-lg font-bold text-on-primary">Major Brand Coverage</div>
+<div class="font-caption text-caption text-on-primary-container mt-1">Extensive manufacturer knowledge</div>
+</div>
+<div class="flex flex-col items-center justify-center p-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest/10 flex items-center justify-center text-tertiary-fixed-dim mb-2">
+<span class="material-symbols-outlined text-[22px]">schedule</span>
+</div>
+<div class="font-label-lg text-label-lg font-bold text-on-primary">Convenient Time Windows</div>
+<div class="font-caption text-caption text-on-primary-container mt-1">Timely arrival and proactive updates</div>
+</div>
+<div class="flex flex-col items-center justify-center p-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest/10 flex items-center justify-center text-secondary-fixed mb-2">
+<span class="material-symbols-outlined text-[22px]">settings_suggest</span>
+</div>
+<div class="font-label-lg text-label-lg font-bold text-on-primary">Quality OEM Components</div>
+<div class="font-caption text-caption text-on-primary-container mt-1">Built to manufacturer standards</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- HOW IT WORKS (3 SIMPLE STEPS) -->
+<section class="py-space-xl bg-surface-container-low" id="how-it-works">
+<div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin">
+<div class="text-center max-w-2xl mx-auto mb-space-xl">
+<span class="font-caption text-caption font-bold text-secondary tracking-widest uppercase mb-1 block">Simple &amp; Hassle-Free</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">How It Works in 3 Quick Steps</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Get your home back in running order without enduring all-day waiting windows or pushy sales tactics.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter relative">
+<!-- Step 1 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest border border-surface-container-high/60 shadow-sm flex flex-col relative">
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary font-bold flex items-center justify-center font-headline-sm text-headline-sm mb-space-md">
+            1
+          </div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Schedule Online or Call</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-md">Select your appliance type and symptom in under 60 seconds. Choose an arrival window that fits your schedule.</p>
+<div class="mt-auto p-3 rounded-xl bg-surface-container-low flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">notifications_active</span>
+<span class="font-caption text-caption text-on-surface">Appointment confirmation and arrival notice</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest border border-surface-container-high/60 shadow-sm flex flex-col relative">
+<div class="w-10 h-10 rounded-full bg-secondary text-on-secondary font-bold flex items-center justify-center font-headline-sm text-headline-sm mb-space-md">
+            2
+          </div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Diagnosis &amp; Flat-Rate Quote</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-md">Our technician tests the appliance components and provides an exact price quote upfront before any repair starts.</p>
+<div class="mt-auto p-3 rounded-xl bg-surface-container-low flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">fact_check</span>
+<span class="font-caption text-caption text-on-surface">Transparent quote with zero hidden travel fees</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest border border-surface-container-high/60 shadow-sm flex flex-col relative">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-bold flex items-center justify-center font-headline-sm text-headline-sm mb-space-md">
+            3
+          </div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Repair &amp; Quality Test</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-md">We complete the approved repair, conduct an operation test, clean up the workspace, and provide your warranty receipt.</p>
+<div class="mt-auto p-3 rounded-xl bg-surface-container-low flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">verified</span>
+<span class="font-caption text-caption text-on-surface">Backed by parts and labor warranty</span>
+</div>
+</div>
+</div>
+<div class="mt-space-lg text-center">
+<a class="inline-flex items-center gap-space-xs px-space-lg h-11 rounded-lg bg-surface-container text-primary font-label-lg text-label-lg font-bold hover:bg-surface-container-high transition-colors" data-path="how-it-works" href="#">
+<span>Explore Our Diagnostic Process</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- CUSTOMER TESTIMONIALS SECTION -->
+<section class="py-space-xl bg-surface" id="reviews">
+<div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-space-sm">
+<div>
+<span class="font-caption text-caption font-bold text-secondary tracking-widest uppercase mb-1 block">Customer Feedback</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Recent Homeowner Experiences</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Realistic experiences from homeowners across our residential service areas.</p>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">rate_review</span>
+<span>Verified Client Experiences</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Review 1 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest border border-surface-container-high/60 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex text-amber-500">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant">Austin, TX</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic mb-space-md">"Our refrigerator cooling failed before a big family dinner. The technician arrived on time, identified the faulty defrost thermostat immediately, and had the part in his van. Professional from start to finish."</p>
+</div>
+<div class="flex items-center gap-space-sm pt-space-sm border-t border-surface-container-low">
+<div class="w-10 h-10 rounded-full bg-surface-container-high text-primary flex items-center justify-center font-bold text-sm shrink-0">SJ</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Sarah Jenkins</span>
+<span class="font-caption text-caption text-on-surface-variant">Refrigerator Repair</span>
+</div>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest border border-surface-container-high/60 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex text-amber-500">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant">Round Rock, TX</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic mb-space-md">"Upfront quote was clear and well explained. The technician wore boot covers, worked cleanly around our cabinets, and fixed our dishwasher drain pump quickly. Very pleased with the communication."</p>
+</div>
+<div class="flex items-center gap-space-sm pt-space-sm border-t border-surface-container-low">
+<div class="w-10 h-10 rounded-full bg-surface-container-high text-primary flex items-center justify-center font-bold text-sm shrink-0">MV</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Marcus Vance</span>
+<span class="font-caption text-caption text-on-surface-variant">Dishwasher Service</span>
+</div>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest border border-surface-container-high/60 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex text-amber-500">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant">Cedar Park, TX</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic mb-space-md">"Clear diagnostic explanation without high pressure. They tested the heating element on our dryer, gave an honest estimate, and had it running quietly within an hour. Excellent workmanship."</p>
+</div>
+<div class="flex items-center gap-space-sm pt-space-sm border-t border-surface-container-low">
+<div class="w-10 h-10 rounded-full bg-surface-container-high text-primary flex items-center justify-center font-bold text-sm shrink-0">ER</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Elena Rodriguez</span>
+<span class="font-caption text-caption text-on-surface-variant">Dryer Repair</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SERVICE AREAS & COVERAGE MAP -->
+<section class="py-space-xl bg-surface-container-low" id="service-areas">
+<div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<!-- Coverage List & Search -->
+<div class="lg:col-span-6 flex flex-col gap-space-md">
+<div>
+<span class="font-caption text-caption font-bold text-secondary tracking-widest uppercase mb-1 block">Local Service Network</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Serving Your Neighborhood</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">We service residential communities with prompt arrival windows and organized dispatching across primary metro areas.</p>
+</div>
+<div class="grid grid-cols-2 gap-space-sm font-body-sm text-body-sm">
+<div class="p-3.5 rounded-xl bg-surface-container-lowest border border-surface-container-high/60 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">location_city</span>
+<div>
+<strong class="text-on-surface block">Central Metro</strong>
+<span class="text-on-surface-variant text-[12px]">Downtown &amp; Mid-City</span>
+</div>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container-lowest border border-surface-container-high/60 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">holiday_village</span>
+<div>
+<strong class="text-on-surface block">North Suburbs</strong>
+<span class="text-on-surface-variant text-[12px]">Round Rock &amp; Cedar Park</span>
+</div>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container-lowest border border-surface-container-high/60 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">villa</span>
+<div>
+<strong class="text-on-surface block">West Valley</strong>
+<span class="text-on-surface-variant text-[12px]">Westlake &amp; Lakeway</span>
+</div>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container-lowest border border-surface-container-high/60 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">home_work</span>
+<div>
+<strong class="text-on-surface block">South Region</strong>
+<span class="text-on-surface-variant text-[12px]">Buda &amp; South Metro</span>
+</div>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col sm:flex-row items-center justify-between gap-space-sm border border-surface-container-high">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">map</span>
+<span class="font-label-lg text-label-lg text-primary font-bold">Unsure if your home is in our area?</span>
+</div>
+<a class="px-4 py-2 bg-secondary text-on-secondary rounded-lg font-label-lg text-label-lg font-bold hover:bg-secondary-container transition-colors shrink-0" data-path="service-areas" href="#">
+              Check ZIP Directory
+            </a>
+</div>
+</div>
+<!-- Map Module -->
+<div class="lg:col-span-6">
+<div class="relative rounded-2xl overflow-hidden shadow-md border border-surface-container-high/60">
+<div class="w-full h-80 lg:h-96 bg-cover bg-center" data-location="Austin, Texas, United States" style="background-image: url('public/assets/service-area-map.png')"></div>
+<div class="absolute bottom-4 left-4 right-4 bg-primary/95 text-on-primary backdrop-blur-md p-3 rounded-xl shadow-lg flex items-center justify-between">
+<div class="flex items-center gap-2 text-sm">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">pin_drop</span>
+<span>Service vans dispatched daily across the metro region</span>
+</div>
+<a class="text-tertiary-fixed text-xs font-bold uppercase tracking-wider hover:underline" href="tel:8005553497">Call Dispatch</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FREQUENTLY ASKED QUESTIONS (FAQ ACCORDION) -->
+<section class="py-space-xl bg-surface" id="faqs">
+<div class="max-w-[840px] mx-auto px-margin-mobile lg:px-margin">
+<div class="text-center mb-space-lg">
+<span class="font-caption text-caption font-bold text-secondary tracking-widest uppercase mb-1 block">Got Questions?</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Frequently Asked Questions</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Everything you need to know about our repair appointments, pricing, and warranty.</p>
+</div>
+<div class="flex flex-col gap-space-sm" id="faq-container">
+<!-- FAQ 1 -->
+<div class="rounded-xl bg-surface-container-lowest border border-surface-container-high/60 shadow-sm overflow-hidden">
+<button class="w-full px-space-md py-4 text-left flex items-center justify-between gap-space-sm font-headline-sm text-[17px] text-primary font-bold hover:text-secondary transition-colors" onclick="toggleFaq(this)">
+<span>How quickly can a technician come to my home?</span>
+<span class="material-symbols-outlined transition-transform duration-200 text-outline">expand_more</span>
+</button>
+<div class="px-space-md pb-4 font-body-sm text-body-sm text-on-surface-variant border-t border-surface-container-low pt-3">
+            We offer next available same-day or next-day appointments across all serviced zones when booked during regular hours. You can choose a convenient 2-hour arrival window that fits your schedule.
+          </div>
+</div>
+<!-- FAQ 2 -->
+<div class="rounded-xl bg-surface-container-lowest border border-surface-container-high/60 shadow-sm overflow-hidden">
+<button class="w-full px-space-md py-4 text-left flex items-center justify-between gap-space-sm font-headline-sm text-[17px] text-primary font-bold hover:text-secondary transition-colors" onclick="toggleFaq(this)">
+<span>Is the diagnostic fee applied toward the repair?</span>
+<span class="material-symbols-outlined transition-transform duration-200 text-outline">expand_more</span>
+</button>
+<div class="px-space-md pb-4 font-body-sm text-body-sm text-on-surface-variant border-t border-surface-container-low pt-3">
+            Yes. The diagnostic charge covers the trip to your home and complete component testing. When you approve the flat-rate repair estimate, the diagnostic fee is credited directly toward your total invoice.
+          </div>
+</div>
+<!-- FAQ 3 -->
+<div class="rounded-xl bg-surface-container-lowest border border-surface-container-high/60 shadow-sm overflow-hidden">
+<button class="w-full px-space-md py-4 text-left flex items-center justify-between gap-space-sm font-headline-sm text-[17px] text-primary font-bold hover:text-secondary transition-colors" onclick="toggleFaq(this)">
+<span>Do you install genuine manufacturer OEM parts?</span>
+<span class="material-symbols-outlined transition-transform duration-200 text-outline">expand_more</span>
+</button>
+<div class="px-space-md pb-4 font-body-sm text-body-sm text-on-surface-variant border-t border-surface-container-low pt-3">
+            Yes, we source original equipment manufacturer parts for Whirlpool, GE, Samsung, LG, Bosch, Sub-Zero, and other leading brands to ensure component compatibility and reliable long-term performance.
+          </div>
+</div>
+<!-- FAQ 4 -->
+<div class="rounded-xl bg-surface-container-lowest border border-surface-container-high/60 shadow-sm overflow-hidden">
+<button class="w-full px-space-md py-4 text-left flex items-center justify-between gap-space-sm font-headline-sm text-[17px] text-primary font-bold hover:text-secondary transition-colors" onclick="toggleFaq(this)">
+<span>What warranty is provided on completed repairs?</span>
+<span class="material-symbols-outlined transition-transform duration-200 text-outline">expand_more</span>
+</button>
+<div class="px-space-md pb-4 font-body-sm text-body-sm text-on-surface-variant border-t border-surface-container-low pt-3">
+            Every completed job includes a dedicated parts and labor warranty. If the installed replacement part experiences issues during the warranty period, we return to inspect and rectify it.
+          </div>
+</div>
+<!-- FAQ 5 -->
+<div class="rounded-xl bg-surface-container-lowest border border-surface-container-high/60 shadow-sm overflow-hidden">
+<button class="w-full px-space-md py-4 text-left flex items-center justify-between gap-space-sm font-headline-sm text-[17px] text-primary font-bold hover:text-secondary transition-colors" onclick="toggleFaq(this)">
+<span>Do I need to do anything to prepare before the technician arrives?</span>
+<span class="material-symbols-outlined transition-transform duration-200 text-outline">expand_more</span>
+</button>
+<div class="px-space-md pb-4 font-body-sm text-body-sm text-on-surface-variant border-t border-surface-container-low pt-3">
+            Simply ensure a clear pathway to the unit. For refrigerators, please leave the unit plugged in so the technician can test electrical draw and measure live temperatures during inspection.
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- HIGH-CONVERSION FINAL CTA BANNER -->
+<section class="py-space-xl bg-primary text-on-primary relative overflow-hidden">
+<div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin relative z-10">
+<div class="flex flex-col lg:flex-row items-center justify-between gap-space-xl text-center lg:text-left">
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-lowest/10 text-primary-fixed-dim text-xs font-semibold self-center lg:self-start">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">calendar_today</span>
+<span>Appointments Available This Week</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-primary tracking-tight">Appliance Giving You Trouble? Schedule Service Today.</h2>
+<p class="font-body-lg text-body-lg text-on-primary-container">Book online in seconds with our simple scheduler or speak directly with our team.</p>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-space-sm shrink-0">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs h-13 px-8 py-3.5 bg-secondary text-on-secondary rounded-xl font-label-lg text-label-lg font-bold shadow-md hover:bg-secondary-container transition-all active:scale-[0.98]" data-path="book-a-technician" href="#">
+<span class="material-symbols-outlined text-[20px]">calendar_today</span>
+<span>Book Online Now</span>
+</a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs h-13 px-8 py-3.5 bg-surface-container-lowest/10 text-on-primary rounded-xl font-label-lg text-label-lg font-bold hover:bg-surface-container-lowest/20 transition-all active:scale-[0.98]" href="tel:8005553497">
+<span class="material-symbols-outlined text-[20px] text-tertiary-fixed-dim">call</span>
+<span>(800) 555-FIX-PRO</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Inline Script for FAQ Toggle -->
+<script>
+    function toggleFaq(btn) {
+      const panel = btn.nextElementSibling;
+      const icon = btn.querySelector('.material-symbols-outlined');
+      const isHidden = panel.classList.contains('hidden');
+      
+      if (isHidden) {
+        panel.classList.remove('hidden');
+        icon.style.transform = 'rotate(180deg)';
+      } else {
+        panel.classList.add('hidden');
+        icon.style.transform = 'rotate(0deg)';
+      }
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low border-t border-surface-container mt-auto"><div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl mb-space-xl"><div class="flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><img alt="FixPro Home Services" class="h-8 w-auto object-contain" src="public/fixpro-logo.png"/></div><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">FixPro Home Services provides certified residential appliance repair, clear upfront diagnostics, and dependable workmanship across the metro area.</p><div class="flex flex-wrap gap-space-xs"><span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-lowest font-caption text-caption text-on-surface font-medium border border-surface-container"><span class="material-symbols-outlined text-[14px] text-secondary">verified</span>Licensed Service</span><span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-lowest font-caption text-caption text-on-surface font-medium border border-surface-container"><span class="material-symbols-outlined text-[14px] text-secondary">shield</span>Insured Work</span></div></div><div class="flex flex-col gap-space-sm"><h3 class="font-label-lg text-label-lg text-primary uppercase tracking-wider font-bold mb-space-xs">Services</h3><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-secondary transition-colors" data-path="services" href="#">Refrigerator Repair</a></li><li><a class="hover:text-secondary transition-colors" data-path="services" href="#">Washer &amp; Dryer</a></li><li><a class="hover:text-secondary transition-colors" data-path="services" href="#">Dishwasher</a></li><li><a class="hover:text-secondary transition-colors" data-path="services" href="#">Oven &amp; Range</a></li><li><a class="hover:text-secondary transition-colors" data-path="services" href="#">AC &amp; HVAC</a></li><li><a class="hover:text-secondary transition-colors" data-path="services" href="#">Diagnostic Assessment</a></li></ul></div><div class="flex flex-col gap-space-sm"><h3 class="font-label-lg text-label-lg text-primary uppercase tracking-wider font-bold mb-space-xs">Service Hours</h3><div class="font-body-sm text-body-sm text-on-surface-variant flex flex-col gap-space-xs"><div class="flex justify-between py-0.5"><span>Monday – Friday:</span><span class="font-semibold text-on-surface">7:30 AM – 7:00 PM</span></div><div class="flex justify-between py-0.5"><span>Saturday:</span><span class="font-semibold text-on-surface">8:00 AM – 5:00 PM</span></div><div class="flex justify-between py-0.5"><span>Sunday:</span><span class="font-semibold text-on-surface">Emergency by request</span></div></div><div class="mt-space-sm"><span class="font-caption text-caption uppercase tracking-wider text-outline font-semibold">Service Coverage:</span><p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Central Metro, North Suburbs, Tri-County, and Western Valley.</p></div></div><div class="flex flex-col gap-space-sm"><h3 class="font-label-lg text-label-lg text-primary uppercase tracking-wider font-bold mb-space-xs">Contact &amp; Booking</h3><div class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-secondary">call</span><a class="hover:text-secondary font-semibold text-on-surface" href="tel:8005553497">(800) 555-3497</a></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-secondary">mail</span><a class="hover:text-secondary" href="mailto:support@fixpro.com">support@fixpro.com</a></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[18px]">verified_user</span><span>Workmanship Warranty Included</span></div><div class="pt-space-xs"><a class="inline-flex items-center gap-1 text-secondary font-label-lg text-label-lg hover:underline font-bold" data-path="book-a-technician" href="#"><span>Book a Technician Online</span><span class="material-symbols-outlined text-[16px]">arrow_forward</span></a></div></div></div></div><div class="pt-space-md border-t border-surface-container flex flex-col md:flex-row items-center justify-between gap-space-md font-caption text-caption text-on-surface-variant"><div>© 2025 FixPro Home Services. All rights reserved.</div><div class="flex items-center gap-space-md"><a class="hover:text-on-surface transition-colors" data-path="privacy-policy" href="#">Privacy Policy</a><a class="hover:text-on-surface transition-colors" data-path="terms-of-service" href="#">Terms of Service</a><a class="hover:text-on-surface transition-colors" data-path="guarantee-terms" href="#">Warranty Terms</a></div></div></div></footer></body></html>

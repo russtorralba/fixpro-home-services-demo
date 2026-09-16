@@ -1,0 +1,5 @@
+import Icon from './Icon'
+
+export default function FinalCTA() {
+  return <section className="overflow-hidden bg-[#001428] py-10 text-white lg:py-14"><div className="page-shell flex flex-col items-center justify-between gap-7 text-center lg:flex-row lg:text-left"><div className="max-w-2xl"><p className="mb-3 inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs font-semibold text-[#b0c9e8]"><Icon className="text-[16px]">calendar_today</Icon>Client-side booking demo</p><h2 className="font-heading text-2xl font-bold leading-tight tracking-tight sm:text-4xl">Explore the Appliance Booking Demo</h2><p className="mt-3 text-base leading-6 text-[#b0c9e8]">Walk through the client-side form to see how a fictional service request can be presented.</p></div><div className="flex flex-col gap-2 sm:flex-row"><a className="button button-blue h-13 px-6" href="#book"><Icon>calendar_today</Icon>Explore Demo Flow</a><a className="button h-13 bg-white/10 px-6 text-white hover:bg-white/20" href="#book"><Icon className="text-[#ffb95f]">call</Icon>Portfolio demo</a></div></div></section>
+}
